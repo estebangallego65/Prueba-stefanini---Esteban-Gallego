@@ -40,6 +40,7 @@ function PantallaTareas() {
   const mostrarError = msg => setSnack({ open: true, msg, severity: "error" });
   const mostrarOk    = msg => setSnack({ open: true, msg, severity: "success" });
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => { cargarTodo(); }, []);
 
   async function cargarTodo() {
